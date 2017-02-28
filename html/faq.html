@@ -1,0 +1,105 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Nyrrti's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Domine|Open+Sans:400,600" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/justifiedGallery.min.css">
+    <link rel="stylesheet" href="../css/colorbox.css">
+    <script src="../scripts/jquery-3.1.1.js"></script>
+    <script src="../scripts/jquery.justifiedGallery.min.js"></script>
+    <script src="../scripts/jquery.colorbox-min.js"></script>
+	<script>
+	$(window).on("load", function() {
+	$('#commdrawing,#commdrawing2').justifiedGallery({
+                rowHeight : 170,
+                lastRow : 'nojustify',
+                captions: false,
+                margins : 3
+            }).on('jg.complete', function () {
+                $(this).find('a').colorbox({
+                    maxWidth: '80%',
+                    maxHeight: '80%',
+                    opacity: 0.8,
+                    transition: 'elastic',
+                    current: '',
+					rel:"thumb-link"
+                });
+            });
+			});
+	</script>
+</head>
+
+<body>
+    <div class="header">
+    <div class="navcontainer">
+        <div class="logocontainer">
+            <div class="logobox">
+                <div class="logo">
+                     <p class="logo">Elly Hoekstra</p>
+                </div>
+                <div class="logosub">
+                    <p class="logosub">Illustration</p>
+                </div>
+            </div>
+            <div class="emailtop">
+                <p class="email">Nyrrti@Outlook.com</p>
+			</div>
+		</div>
+        <div class="nav">
+            <ul id="topnav">
+            <li><a href="../index.html">Portfolio</a></li>
+            <li><a href="commissions.html">Commissions</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>      
+</div>
+<div class="spacer"></div>
+    
+    <div class="contentcontainer">
+        <div class="faqcontentcontainer">
+            <h2>Frequently Asked Questions</h2>
+            <p class="comminfo">General Questions</p>
+            <p class="comminfo">Commission Questions</p>
+
+        </div>
+            <div class="comminfocontainer">
+                <h2>Got Questions?</h2>
+                <hr class="styletwo">
+                <p class="comminfo">If you have any questions or would prefer to just discuss things over email, feel free to contact me at Nyrrti@Outlook.com.</p>
+                <p class="comminfo">Has your question not be answered? No problem.</p>
+                <p class="comminfo">Feel free to contact me at these locations.</p> 
+            </div>
+    </div>
+   <div class="footer">
+    <div class="emailfooter">
+        <p class="email">Nyrrti@Outlook.com</p></div>
+    <div class="footercontainer">
+        <ul id="footertext">
+            <li><a href="#.asp">Home</a></li>
+            <li><a href="#.asp">Portfolio</a></li>
+            <li><a href="#.asp">Commissions</a></li>
+            <li><a href="#.asp">About</a></li>
+            <li><a href="#.asp">FAQ</a></li>
+            <li><a href="#.asp">Contact</a></li>
+        </ul>
+        
+        <div class="icons">
+            <div class="icon"><img src="" alt="icon"></div>
+            <div class="icon"><img src="" alt="icon"></div>
+            <div class="icon"><img src="" alt="icon"></div>
+            <div class="icon"><img src="" alt="icon"></div>
+            <div class="icon"><img src="" alt="icon"></div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p class="footer">Copyright © 2015, nyrrti.com.  All Rights Reserved.</p></div>
+</div>
+</body>
+</html>

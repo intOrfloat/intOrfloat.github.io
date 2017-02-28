@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Nyrrti.com</title>
+    <!--<link href="https://fonts.googleapis.com/css?family=Domine|Open+Sans:400,600" rel="stylesheet">-->
+	<style>
+		.grid{
+			width:800px;
+			margin:0 auto;
+		}
+		.grid-item,
+		.grid-item img,
+		.grid-sizer{ width: 33.33%; }
+		.grid-item img {
+			float:left;
+			width:100%;
+		}
+	</style>
+	<script src="scripts/jquery-3.1.1.js"></script>
+    <script src="scripts/masonry.pkgd.min.js"></script>
+	<script src="scripts/imagesloaded.pkgd.js"></script>
+	<script>
+	$('.grid').imagesLoaded( function() {
+	$('.grid').masonry({
+  // options
+  itemSelector: '.grid-item',
+  columnWidth: '.grid-sizer'
+});
+	});
+		
+	</script>
+</head>
+
+<body>
+    <div class="grid">
+		<div class="grid-sizer"></div>
+        <div class="grid-item"><img src="images/art 1200px/blackdragon.png" alt="test"></div>
+        <div class="grid-item"><img src="images/art 1200px/Blue dragon (2).png" alt="test"></div>
+        <div class="grid-item"><img src="images/art 1200px/Dragon Eggs2.png" alt="test"></div>
+        <div class="grid-item"><img src="images/art 1200px/Dragonlay 1.png" alt="test"></div>
+        <div class="grid-item"><img src="images/art 1200px/Goldammer 02 (1).png" alt="test"></div>
+        <div class="grid-item"><img src="images/art 1200px/Queen Nyrrti 02 (1).png" alt="test"></div>
+    </div> 
+</body>
+</html>
+

@@ -1,0 +1,405 @@
+body {
+    background-color: #1a1c1f;
+    margin: 0;
+    padding: 0;  
+    font-size: 100%;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    text-align: center;
+    }
+
+h1{	
+    font-size: 2em;
+    font-weight: 400;
+    color: #169ed9;
+    margin: 0 0 0 0;
+    padding: 20px;
+}
+	
+		
+h2{	 
+    font-size: 1.19em;
+    font-weight: 400;
+    color: #cc5f29;
+    margin: 0 0 0 0;
+    padding: 8px;
+}
+
+h3{	 
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #667080; 
+    margin: 0 0 0 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    }
+
+p.comminfo {
+    font-size: 0.95em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #7e848c;
+    text-align: left;
+    line-height: 1.5em;
+    padding: 10px;
+}
+
+p.cdescription {
+    font-size: 0.93em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #8a9099;
+    text-align: left;
+    line-height: 1.5em;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+p.logo {
+    font-size: 2.4em;
+    font-weight: 600;    
+    color: #148dcc;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+/*#148dcc*/
+
+p.logosub {
+    font-size: 1.5em;
+    font-weight: 400;    
+    color: #9da0a6;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: -28px;
+    }
+
+p.email {
+    font-size: 1.1em;
+    font-weight: 400;    
+    color: #667280;
+    letter-spacing: 2px;
+    margin: 0;
+    padding: 0;
+}
+
+p.footer {
+    font-size: .8em;
+    font-weight: 400;    
+    color: #666666;
+    letter-spacing: 2px;
+    text-align: right;
+}
+
+p.price {
+    font-size: 1.5em;
+    font-weight: 600;    
+    color: #cc5f29;
+    letter-spacing: 2px;
+    margin: 0;
+    padding: 0;
+}
+
+/* I HAVE NO CLUE HOVER THUMBNAIL CSS */
+
+.overlay {
+    background-color: #148dcc !important;
+}
+
+.overlay:hover img { 
+opacity: 0.7 !important;
+transition: opacity 50ms ease-in !important;
+transition: opacity 30ms ease-out !important;
+ }
+
+/* GENERAL NAVIGATION CSS */
+
+a {
+text-decoration: none;
+font-family: 'Open Sans', Arial, Times, serif;
+font-size: 1em;
+font-weight: 400;    
+color: #99b1cc;
+letter-spacing: 1px;    
+}
+
+/* TOPNAV CSS */
+
+ul#topnav {
+    margin-left: 0;
+    padding-left: 0;
+    white-space: nowrap;
+    float: right;
+}
+
+#topnav li {
+    display: inline;
+    list-style-type: none;
+    padding-left: 40px;
+}	
+
+#topnav a { 
+    text-align:right;
+}
+
+#topnav a:hover {
+    color: #148dcc;
+}
+
+/* FOOTERNAV CSS */
+
+ul#footertext {
+    margin: 0;
+    padding:0;
+    white-space: nowrap;
+    float: left;
+}
+
+#footertext li {
+display: inline;
+list-style-type: none;
+padding-right: 25px;
+}	
+
+#footertext a { 
+    font-size: 0.85em;
+    color: #5c5f66;
+}
+
+#footertext a:hover {
+color: #148dcc;
+}
+
+/* HR TAG STYLING */
+hr.styletwo { border: 0; border-bottom: 1px dashed #404447; background: #404447; }
+
+/* GRADIENT BLOCK BETWEEN HEADER AND FOOTER*/
+.spacer {
+    width: 100%;
+    height: 8px;
+    background-color: black;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0d0d0d+0,1f2326+50,0d0d0d+100 */
+    background: rgb(13,13,13); /* Old browsers */
+    background: -moz-linear-gradient(left,  rgba(13,13,13,1) 0%, rgba(31,35,38,1) 50%, rgba(13,13,13,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  rgba(13,13,13,1) 0%,rgba(31,35,38,1) 50%,rgba(13,13,13,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  rgba(13,13,13,1) 0%,rgba(31,35,38,1) 50%,rgba(13,13,13,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0d0d0d', endColorstr='#0d0d0d',GradientType=1 ); /* IE6-9 */  
+}
+
+/* HEADER 100% WIDTH FOR BACKGROUNDS IMG */
+
+.header {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    background-image: url(../images/bg1.png);
+    background-repeat: no-repeat;
+}
+
+.navcontainer {
+    display: flex;
+    width: 1200px;
+    height: 300px;
+    margin: auto;
+}
+
+.logocontainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    height: 100%;
+    margin: auto;
+}
+
+.logobox {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    height: 100px;
+    margin-top: 99px;
+    border: 1px dotted #404447;
+}
+
+.logo {
+    margin: auto;  
+}
+
+.logosub {
+    margin: auto;
+}
+
+.nav {
+    flex: 2;
+    margin: auto;
+}
+
+.emailtop {
+    align-self: flex-end;
+    margin: auto;
+    margin-top: -3px;
+}
+
+/* CONTAINER FOR 100% WIDTH */
+
+.container {
+    width: 99%;
+    min-height: 400px;
+    margin: 0 auto;
+}
+
+.contentcontainer {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    min-height: 400px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+.gallery {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+div.img {
+    width: 25%;
+    height: 300px;
+    margin: 0px 0px 0px 0px;
+    border: 1px solid #1f2325;
+    background-color: #272b2e;
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.commexamplescontainer {
+   flex-basis: 60%;
+}
+
+.aboutcontainer {
+    flex-basis: 60%;
+    background-color: #212326;
+    padding: 20px;
+    border: 1px dotted #08384d;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.examplebox{
+    display: flex;
+    margin-bottom: 5px;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #212326;
+    padding: 20px;
+    border: 1px dotted #08384d;
+ 
+}
+
+.faqcontentcontainer{
+    flex-basis: 60%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #212326;
+    padding: 20px;
+    border: 1px dotted #08384d;
+ 
+}
+
+.commtype {
+    flex-basis: 80%;
+}
+
+.commprice{
+    flex-basis: 20%;
+    margin:auto;
+    padding: 20px;
+}
+
+.commdrawingcontainer {
+    flex-basis: 40%;
+}
+
+#commdrawing {
+    width: 300px;
+    background-color: #242629;
+    border: 1px solid #2d3440;
+}
+
+#commdrawing2 {
+    width: 300px;
+    background-color: #242629;
+    border: 1px solid #2d3440;
+}
+
+.commdescription {
+    flex: 1;
+    padding: 0 20px 0 20px;
+}
+
+.comminfocontainer {
+    flex-basis: 29%;
+}
+
+.orderbox {
+    flex-basis: 30%;
+    border: 1px dotted #404447;
+    margin-bottom: 60px;
+}
+
+.footer {
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.footercontainer {
+    width:  1200px;
+    height: 50px;
+    margin: auto;
+    border-bottom: 1px dotted #404447;
+}
+
+.emailfooter {
+    width: 100%;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.icons{
+
+}
+
+div.icon {
+    width: 40px;
+    height: 40px;
+    margin: 0px 20px 0px 0px;
+    border: 1px solid #2d3440;
+    background-color: #242629;
+    float: right;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+div.icon:first-child {
+    margin: 0 0 0 0;
+}
+
+.copyright {
+    width:  1200px;
+    height: 50px;
+    margin: auto; 
+    margin-top: 5px;
+}

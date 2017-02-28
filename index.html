@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <title>Nyrrti.com</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Domine|Open+Sans:400,600" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/justifiedGallery.min.css">
+    <link rel="stylesheet" href="./css/colorbox.css">
+    <script src="scripts/jquery-3.1.1.js"></script>
+    <script src="scripts/jquery.justifiedGallery.min.js"></script>
+    <script src="scripts/jquery.colorbox-min.js"></script>
+	<script>
+	$(window).on("load", function() {
+	$('#gallery').justifiedGallery({
+                rowHeight : 318,
+                lastRow : 'nojustify',
+                captions: false,
+                margins : 3
+            }).on('jg.complete', function () {
+                $(this).find('a').colorbox({
+                    maxWidth: '80%',
+                    maxHeight: '80%',
+                    opacity: 0.8,
+                    transition: 'elastic',
+                    current: '',
+					rel:"thumb-link"
+                });
+            });
+			});
+	</script>
+</head>
+    <body>
+
+<div class="header">
+    <div class="navcontainer">
+        <div class="logocontainer">
+            <div class="logobox">
+                <div class="logo">
+                     <p class="logo">Elly Hoekstra</p>
+                </div>
+                <div class="logosub">
+                    <p class="logosub">Illustration</p>
+                </div>
+            </div>
+            <div class="emailtop">
+                <p class="email">Nyrrti@Outlook.com</p>
+			</div>
+		</div>
+        <div class="nav">
+            <ul id="topnav">
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="html/commissions.html">Commissions</a></li>
+            <li><a href="html/about.html">About</a></li>
+            <li><a href="html/faq.html">FAQ</a></li>
+            <li><a href="html/contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>      
+</div>
+<div class="spacer"></div>
+<div class="container">
+     <div id="gallery" class="justified-gallery">
+        <div class="overlay"><a class="thumb-link" href="./images/1200px/Aivlis%20by%20Nyrrti%201200px.png"><img alt="caption for image 1" src="./images/750px/Aivlis%20by%20Nyrrti750px.png"/></a></div>
+        <div class="overlay"><a class="thumb-link" href="./images/1200px/Black%20King%20by%20Nyrrti%201200px.png"><img alt="caption for image 1" src="./images/750px/Black%20King%20by%20Nyrrti750px.png"/></a></div>
+        <div class="overlay"><a class="thumb-link" href="./images/1200px/Blue%20Dragon%20by%20Nyrrti.png"><img alt="caption for image 1" src="./images/750px/Blue%20Dragon%20by%20Nyrrti750px.png"/></a></div>
+        <div class="overlay"><a class="thumb-link" href="./images/1200px/Brood%20Mother%201200px.png"><img alt="caption for image 1" src="./images/750px/Brood%20Mother750px.png"/></a></div>
+        <div class="overlay"><a class="thumb-link" href="./images/1200px/Bubblegum%20Dragon2%20by%20Nyrrti%201200px.png"><img alt="caption for image 1" src="./images/750px/Bubblegum%20Dragon2%20by%20Nyrrti750px.png"/></a></div>
+        <div class="overlay"><a class="thumb-link" href="./images/1200px/Dragonlord%20test%201200px.png"><img alt="caption for image 1" src="./images/750px/Dragonlord%20test%20copy750px.png"/></a></div>
+        <div class="overlay"><a class="thumb-link" href="./images/1200px/Goldammer%202%20by%20Nyrrti%201200px.png"><img alt="caption for image 1" src="./images/750px/Goldammer%202%20by%20Nyrrti750px.png"/></a></div>
+        <div class="overlay"><a class="thumb-link" href="./images/1200px/Guardian%20by%20Nyrrti%201200px.png"><img alt="caption for image 1" src="./images/750px/Guardian%20by%20Nyrrti750px.png"/></a></div>
+        <div class="overlay"><a class="thumb-link" href="./images/1200px/Green%20Queen%20by%20Nyrrti%201200px.png"><img alt="caption for image 1" src="./images/750px/Green%20Queen%20by%20Nyrrti750px.png"/></a></div>
+        <div class="overlay"><a class="thumb-link" href="./images/1200px/Snow%204%20by%20Nyrrti%201200px.png"><img alt="caption for image 1" src="./images/750px/Snow%20by%20Nyrrti750px.png"/></a></div>
+        <div class="overlay"><a class="thumb-link" href="./images/1200px/Hello%20There%20by%20Nyrrti%201200px.png"><img alt="caption for image 1" src="./images/750px/Hello%20There%20by%20Nyrrti750px.png"/></a></div>
+        <div class="overlay"><a class="thumb-link" href="./images/1200px/Thunder%20and%20Lightning%20by%20Nyrrti.png"><img alt="caption for image 1" src="./images/750px/Thunder%20and%20Lightning%20by%20Nyrrti.png"/></a></div>
+        <div class="overlay"><a class="thumb-link" href="./images/1200px/Purple%20Queen%20by%20Nyrrti%201200px.png"><img alt="caption for image 1" src="./images/750px/Purple%20Queen%20by%20Nyrrti750px.png"/></a></div>
+        <div class="overlay"><a class="thumb-link" href="./images/1200px/Red%20Worm%201200px.png"><img alt="caption for image 1" src="./images/750px/Red%20Dragon%20by%20Nyrrti750px.png"/></a></div> 
+    </div>
+</div>
+<div class="footer">
+    <div class="emailfooter">
+        <p class="email">Nyrrti@Outlook.com</p></div>
+    <div class="footercontainer">
+        <ul id="footertext">
+            <li><a href="#.asp">Home</a></li>
+            <li><a href="#.asp">Portfolio</a></li>
+            <li><a href="#.asp">Commissions</a></li>
+            <li><a href="#.asp">About</a></li>
+            <li><a href="#.asp">FAQ</a></li>
+            <li><a href="#.asp">Contact</a></li>
+        </ul>
+        
+        <div class="icons">
+            <div class="icon"><img src="" alt="icon"></div>
+            <div class="icon"><img src="" alt="icon"></div>
+            <div class="icon"><img src="" alt="icon"></div>
+            <div class="icon"><img src="" alt="icon"></div>
+            <div class="icon"><img src="" alt="icon"></div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p class="footer">Copyright © 2015, nyrrti.com.  All Rights Reserved.</p></div>
+</div>
+    </body>
+	<script>
+	
+    
+    </script>
+</html>
